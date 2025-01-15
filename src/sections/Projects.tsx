@@ -57,9 +57,9 @@ export const ProjectsSection = () => {
           description="See how i transformed concepts into engaging digital experiences"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, index) => (
             <Card
-              key={project.title}
+              key={index}
               className="pt-8 pb-0 pr-8 pl-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
             >
             
@@ -76,8 +76,8 @@ export const ProjectsSection = () => {
                   </h3>
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
-                    {project.results.map((result) => (
-                      <li className="flex gap-2 text-sm text-white/50 md:text-base">
+                    {project.results.map((result, index) => (
+                      <li className="flex gap-2 text-sm text-white/50 md:text-base" key={index}>
                         <CheckIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>

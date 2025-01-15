@@ -51,8 +51,8 @@ export const TestimonialsSection = () => {
           description="Don't just take my word for it. Here's what my clients have to say."
         />
         <div>
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name}>
+          {testimonials.map((testimonial, index) => (
+            <Card key={index}>
               
               <Image src={testimonial.avatar} alt={testimonial.name} />
               <div>{testimonial.name}</div>
