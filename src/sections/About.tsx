@@ -18,19 +18,19 @@ import { ToolBoxItems } from "@/components/ToolBoxItems";
 
 const hobbies = [
   {
-    title: "Reading",
+    title: "Lectura",
     emoji: "📚",
     left: "5%",
     top: "5%",
   },
   {
-    title: "Cooking",
+    title: "Cocinar",
     emoji: "🍳",
     left: "50%",
     top: "5%",
   },
   {
-    title: "Gaming",
+    title: "Videojuegos",
     emoji: "🎮",
     left: "10%",
     top: "35%",
@@ -42,19 +42,19 @@ const hobbies = [
     top: "40%",
   },
   {
-    title: "Voleyball",
+    title: "Voleibol",
     emoji: "🏐",
     left: "70%",
     top: "45%",
   },
   {
-    title: "Music",
+    title: "Musica",
     emoji: "🎵",
     left: "5%",
     top: "65%",
   },
   {
-    title: "Running",
+    title: "Correr",
     emoji: "🏃",
     left: "45%",
     top: "70%",
@@ -93,31 +93,30 @@ export const AboutSection = () => {
     <div className="py-20 lg:py-28">
       <div className="container">
         <SectionHeader
-          eyebrow="About me"
-          title="A gimplse into my world"
-          description="Learn more about who Iam, what I do, and what inspires me."
+          eyebrow="Acerca de mi"
+          title="Una mirada a mi mundo"
+          description="Aprende más sobre quién soy, qué hago y qué me inspira."
         />
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] md:col-span-2 lg:col-span-1">
               <CardHeader
-                title="My reads"
-                description="Explore the books shaping my perspectives"
+                title="Mis lecturas"
+                description="Explora los libros que moldean mis perspectivas"
               />
 
               <div>
                 <Image
                   className="w-40 mx-auto mt-2 md:mt-0"
                   src={bookImage}
-                  alt="Book cover"
+                  alt="Portada del libro"
                 />
               </div>
             </Card>
             <Card className="h-[320px] md:col-span-3 lg:col-span-2">
               <CardHeader
-                title="My toolbox"
-                description="Explore the technologies and tools I use to create digital
-                experiences."
+                title="Mis herramientas"
+                description="Explora las tecnologías y herramientas que utilizo para crear experiencias digitales."
               />
               <ToolBoxItems items={toolboxItems} />
               <ToolBoxItems
@@ -131,8 +130,8 @@ export const AboutSection = () => {
             <Card className="h-[320px] p-0 flex flex-col md:col-span-3 lg:col-span-2">
               <CardHeader
                 className="px-6 py-6 "
-                title="Beyond the code"
-                description="Explore my interests and hobbies beyond the code"
+                title="Más allá del código"
+                description="Explora mis intereses y pasatiempos más allá del código"
               />
               <div className="relative flex-1">
                 {hobbies.map((hobby, index) => (

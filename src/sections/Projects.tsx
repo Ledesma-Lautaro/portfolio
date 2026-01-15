@@ -52,9 +52,9 @@ export const ProjectsSection = () => {
     <section className="pb-16 lg:py-24">
       <div className="container">
         <SectionHeader
-          eyebrow="Real world results"
-          title="Featured projects"
-          description="See how i transformed concepts into engaging digital experiences"
+          eyebrow="Resultados reales"
+          title="Proyectos destacados"
+          description="Mira cómo transformé conceptos en experiencias digitales atractivas"
         />
         <div className="flex flex-col gap-20 mt-10 md:mt-20">
           {portfolioProjects.map((project, index) => (
@@ -85,7 +85,7 @@ export const ProjectsSection = () => {
                   </ul>
                   <a href={project.link}>
                     <button className="bg-white text-gray-950 inline-flex items-center justify-center gap-2 mt-8 h-12 w-full rounded-xl font-semibold md:w-auto px-8">
-                      <span>View live site</span>
+                      <span>Ver demo</span>
                       <ArrowUpRighticon className="size-4" />
                     </button>
                   </a>
