@@ -60,9 +60,11 @@ export const ProjectsSection = () => {
           {portfolioProjects.map((project, index) => (
             <Card
               key={index}
-              className="pt-8 pb-0 pr-8 pl-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20"
+              className="pt-8 pb-0 pr-8 pl-8 md:pt-12 md:px-10 lg:pt-16 lg:px-20 sticky top-16"
+              style ={{
+                top: `calc(64px + ${index * 40}px)`
+              }}
             >
-            
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
                   <div className="bg-gradient-to-r gap-2 from-emerald-300 to-sky-400 inline-flex font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text">
@@ -77,7 +79,10 @@ export const ProjectsSection = () => {
                   <hr className="border-t-2 border-white/5 mt-4 md:mt-5" />
                   <ul className="flex flex-col gap-4 mt-4 md:mt-5">
                     {project.results.map((result, index) => (
-                      <li className="flex gap-2 text-sm text-white/50 md:text-base" key={index}>
+                      <li
+                        className="flex gap-2 text-sm text-white/50 md:text-base"
+                        key={index}
+                      >
                         <CheckIcon className="size-5 md:size-6" />
                         <span>{result.title}</span>
                       </li>
